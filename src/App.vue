@@ -1,15 +1,20 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!-- Este es "MiComponente.vue" pero para usarlo se requiere IMPORTARLO, en caso contrario no lo reconoce -->
+  <MiComponente></MiComponente> 
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import MiComponente from './components/MiComponente.vue' // Aqui se IMPORTA
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    MiComponente // En esta parte ya lo reconoce el App.vue
   }
 }
 </script>
